@@ -1,6 +1,6 @@
 # sklep
 
 ### type to run development mode
-sh```
+```sh
 npm start
 ```
