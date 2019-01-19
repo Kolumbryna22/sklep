@@ -23,6 +23,11 @@ export const Header = props => {
             activeClassName='activeLink'>
           User
         </NavLink>
+        <NavLink
+            exact to="/basket"
+            activeClassName='activeLink'>
+          Basket
+        </NavLink>
       </nav>
     </div>
   );
