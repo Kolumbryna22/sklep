@@ -1,4 +1,5 @@
 import React from 'react';
+import './Basket.css';
 
 export class Basket extends React.Component {
   render() {

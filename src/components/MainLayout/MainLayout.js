@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from '../Header/Header.js';
 import { Footer } from '../Footer/Footer.js';
+import './MainLayout.css';
 
 export class MainLayout extends React.Component {
   render() {
