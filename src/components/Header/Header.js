@@ -12,11 +12,6 @@ export const Header = props => {
         <NavLink
             exact to="/"
             activeClassName='activeLink'>
-          Root
-        </NavLink>
-        <NavLink
-            exact to="/home"
-            activeClassName='activeLink'>
           Home
         </NavLink>
         <NavLink
