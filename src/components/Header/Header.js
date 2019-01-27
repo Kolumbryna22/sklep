@@ -5,9 +5,9 @@ import './Header.css';
 export const Header = props => {
   return (
     <div>
-      <nav className="navigation">
+      <nav className="navContainer container">
         <div className="logo">
-          Logo
+          SKLEP
         </div>
         <div className="links">
           <NavLink
@@ -16,9 +16,19 @@ export const Header = props => {
             Home
           </NavLink>
           <NavLink
-              exact to="/user"
+              exact to="/faq"
               activeClassName='activeLink'>
-            User
+            FAQ
+          </NavLink>
+          <NavLink
+              exact to="/regulamin"
+              activeClassName='activeLink'>
+            Regulamin
+          </NavLink>
+          <NavLink
+              exact to="/kontakt"
+              activeClassName='activeLink'>
+            Kontakt
           </NavLink>
           <NavLink
               exact to="/basket"

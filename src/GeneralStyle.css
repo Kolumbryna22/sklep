@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  max-width: 1050px;
+  padding: 10px 20px;
+  margin: 0 auto;
+}
+
+.links a {
+  color: black;
+  text-decoration: none;
+  padding: 5px 10px;
+  opacity: 0.5;
+}
+
+.links .activeLink {
+  opacity: 1;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,11 +1,11 @@
 import React from 'react';
-import './User.css';
+import './Produkt.css';
 
-export class User extends React.Component {
+export class Produkt extends React.Component {
   render() {
     return (
       <div>
-        User
+        Produkt
       </div>
     );
   }
