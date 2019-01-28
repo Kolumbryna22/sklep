@@ -12,28 +12,31 @@ export const Header = props => {
         <div className="links">
           <NavLink
               exact to="/"
-              activeClassName='activeLink'>
+              activeClassName="activeLink">
             Home
           </NavLink>
           <NavLink
               exact to="/faq"
-              activeClassName='activeLink'>
+              activeClassName="activeLink">
             FAQ
           </NavLink>
           <NavLink
               exact to="/regulamin"
-              activeClassName='activeLink'>
+              activeClassName="activeLink">
             Regulamin
           </NavLink>
           <NavLink
               exact to="/kontakt"
-              activeClassName='activeLink'>
+              activeClassName="activeLink">
             Kontakt
           </NavLink>
           <NavLink
               exact to="/basket"
-              activeClassName='activeLink'>
-            Basket
+              activeClassName="activeLink">
+            <img
+                src="images/basket.png"
+                alt="koszyk"
+                className="basket"/>
           </NavLink>
         </div>
       </nav>

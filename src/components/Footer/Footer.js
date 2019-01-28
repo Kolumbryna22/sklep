@@ -9,22 +9,22 @@ export const Footer = props => {
     <div className="links">
       <NavLink
           exact to="/"
-          activeClassName='activeLink'>
+          activeClassName="activeLink">
         Home
       </NavLink>
       <NavLink
           exact to="/"
-          activeClassName='activeLink'>
+          activeClassName="activeLink">
         FAQ
       </NavLink>
       <NavLink
           exact to="/"
-          activeClassName='activeLink'>
+          activeClassName="activeLink">
         Regulamin
       </NavLink>
       <NavLink
           exact to="/"
-          activeClassName='activeLink'>
+          activeClassName="activeLink">
         Kontakt
       </NavLink>
     </div>
