@@ -1,8 +1,7 @@
 import React from 'react';
-import { Produkt } from '../Produkt/Produkt';
-import './ProduktList.css';
+import './SingleProdukt.css';
 
-export class ProduktList extends React.Component {
+export class SingleProdukt extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -55,22 +54,21 @@ export class ProduktList extends React.Component {
 
   render() {
     return (
-      <div className="produktList">
-        {
-          this.state.produkts.map((produkt, i) => (
-            <Produkt
-                key={i}
-                index={i}
-                name={produkt.name}
-                price={produkt.price}
-                text={produkt.text}
-                showText={false}
-                additionalInfo={produkt.additionalInfo}
-                imgSrc={produkt.imgSrc}
-            />)
-          )
-        }
+      <div className="singleProdukt">
+        <p className="additionnalInfo">
+          {this.state.produkts[this.props.match.params.id].additionalInfo}
+        </p>
+        <img src={"../images/" + this.state.produkts[this.props.match.params.id].imgSrc + ".png"} alt="produkt"/>
+        <p className="name">
+          {this.state.produkts[this.props.match.params.id].name}
+        </p>
+        <p className="price">
+          ${this.state.produkts[this.props.match.params.id].price}
+        </p>
+        <p className="text">
+          {this.state.produkts[this.props.match.params.id].text}
+        </p>
       </div>
     );
   }
-}
+};

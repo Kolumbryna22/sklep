@@ -1,28 +1,33 @@
-.produkt {
+.singleProdukt {
   position: relative;
-  width: 230px;
+  width: 80%;
   height: 310px;
   background-color: #f5f5f5;
   color: black;
   text-decoration: none;
-  margin: 20px;
+  margin: 40px auto;
   padding: 20px;
 }
-
-.produkt img {
+  
+.singleProdukt img {
   position: absolute;
   width: 100px;
   height: 150px;
-  top: 27%;
-  left: 27%;
+  top: 90px;
+  left: 30px;
 }
-
-.produkt .name {
+  
+.singleProdukt .name {
   position: absolute;
   bottom: 40px;
 }
-
-.produkt .price {
+  
+.singleProdukt .price {
   position: absolute;
   bottom: 15px;
 }
+
+.singleProdukt .text {
+  padding-left: 200px;
+}
+  

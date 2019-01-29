@@ -1,8 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Produkt.css';
 
 export const Produkt = (props) => (
-  <div className="produkt">
+  <NavLink
+      exact to={"/produkt/" + props.index}
+      index={props.index}
+      className="produkt">
     <p className="additionnalInfo">
       {props.additionalInfo}
     </p>
@@ -13,5 +17,5 @@ export const Produkt = (props) => (
     <p className="price">
       ${props.price}
     </p>
-  </div>
+  </NavLink>
 );

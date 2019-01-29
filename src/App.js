@@ -6,7 +6,7 @@ import './GeneralStyle.css';
 import { MainLayout } from './components/MainLayout/MainLayout.js';
 import { Home } from './components/Home/Home.js';
 import { Basket } from './components/Basket/Basket.js';
-import { Produkt } from './components/Produkt/Produkt.js';
+import { SingleProdukt } from './components/SingleProdukt/SingleProdukt.js';
 import { NoMatch } from './components/NoMatch/NoMatch.js';
 
 class App extends React.Component {
@@ -17,7 +17,7 @@ class App extends React.Component {
           <Switch>
             <Route exact path={'/'} component={Home} />
             <Route exact path={'/basket'} component={Basket} />
-            <Route exact path={'/produkt'} component={Produkt} />
+            <Route exact path={'/produkt/:id'} component={SingleProdukt} />
             <Route component={NoMatch} />
           </Switch>
         </MainLayout>
